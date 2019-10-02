@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.typcn {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Lato', Courier, monospace;
+    background-color: #fafafa;
+}
+
+header {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(90deg, rgba(221, 13, 204, 0.6), rgba(43, 172, 247, 0.6)), url("./img/anthony-delanoix-48936.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.topBar {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    top: 0;
+    margin: 15px 40%;
+    position: absolute;
+}
+
+.topBar ul li {
+    display: inline-block;
+    margin: 3px;
+}
+
+.banner {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+nav {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.links {
+    display: inline-block;
+    margin: 10px;
+    color: white;
+}
+
+.intro {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro h1 {
+    margin: 0 auto;
+    font-size: 4rem;
+}
+
+.intro h4 {
+    margin: 0.5rem auto 2rem auto;
+    color: white;
+}
+
+.intro ul {
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.button {
+    text-align: center;
+    line-height: 50px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.intro ul li:nth-child(1) {
+    background-color: rgb(235, 235, 235);
+    color: black;
+}
+
+.intro ul li:nth-child(2) {
+    background-color: rgb(245, 80, 80);
+}
+
+.content {
+    margin: 0 auto;
+    width: 80vw;
+    display: flex;
+}
+
+.slide {
+    //width: 300px;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(44, 44, 44, 0.7)), url(http://unsplash.it/g/1300/600?random&gravity=south);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+.textSlider {
+    margin: 0 auto;
+    width: 40%;
+    height: 200px;
+    background: white;
+}
+
+.textSlider h1 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.textSlider h4:nth-child(1) {
+    color: green;
+    font-size: 1.2rem;
+}
+
+.slide img {
+    display: inline;
+}
+
+.trending {
+    flex: 4;
+    background-color: brown;
+    margin-right: 8rem;
+    margin-top: 60px;
+}
+
+.sidePanel {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.news {
+    padding: 12px 0 15px 0;
+}
+
+.sidePanel img {
+    width: 100%;
+    padding: 15px 0 15px 0;
+}
+
+.meta {
+    padding: 12px 0 20px 0;
+    border-bottom: 2px solid rgba(165, 165, 165, 0.4);
+}
+
+.info {
+    display: inline;
+    font-size: 1rem;
+    color: gray;
+    line-height: 1rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 0 1 auto;
+    width: 20vw;
+    box-shadow: 2px 2px 5px lightblue;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.metaCard {
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    transform: scale(0.9);
+    display: inline-block;
+}
+
+.metaCard h4:nth-child(1) {
+    display: inline-block;
+    margin-right: 0.5rem;
+    color: yellow;
+}
+
+.card h3 {
+    margin-left: 0.5rem;
+    margin-bottom: 0.7rem;
+}
