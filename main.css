@@ -230,8 +230,9 @@ nav {
 }
 
 .authors {
-    padding: 20px;
-    width: 100%;
+    margin-top: 60px;
+    padding-top: 20px;
+    width: 100vw;
     height: 600px;
     background-color: rgb(226, 226, 226);
 }
@@ -247,7 +248,7 @@ nav {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    width: 60vw;
+    width: 70vw;
 }
 
 .authorCard {
@@ -260,6 +261,10 @@ nav {
     width: 380px;
     height: 400px;
     background-color: white;
+}
+
+.authorCard h1 {
+    font-size: 1.4rem;
 }
 
 .authorCard:nth-child(2) {
@@ -280,6 +285,8 @@ nav {
 
 .authorCard:nth-child(2) h1 {
     text-align: center;
+    font-size: 2.2vw;
+    padding: 10px;
 }
 
 .author {
@@ -313,4 +320,91 @@ nav {
 .img-cropper img {
     width: 240px;
     height: auto;
+}
+
+footer {
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+.footerWraper {
+    padding-top: 20px;
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerBrand {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoWrapper {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerBrand img {
+    width: auto;
+    height: 80px;
+}
+
+.footerBrand h3 {
+    flex: 0 1 80%;
+    padding: 10px;
+    color: gray;
+    font-size: 1.1vw;
+}
+
+.footerNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid white;
+    margin-bottom: 20px;
+}
+
+.footerNav ul {
+    padding: 15px;
+    flex: 0 1 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footerNav ul li {
+    margin-right: 20px;
+    list-style-type: none;
+    font-size: 1rem;
+}
+
+.copyrights {
+    flex: 0 0 30%;
+    color: gray;
+    font-size: 1vw;
+}
+
+@media screen and (min-width: 1600px) {
+    .authorCard:nth-child(2) h1 {
+        text-align: center;
+        font-size: 1.8vw;
+        padding: 10px;
+    }
+    .footerBrand h3 {
+        flex: 0 1 80%;
+        padding: 10px;
+        color: gray;
+        font-size: 0.8vw;
+    }
+    .copyrights {
+        flex: 0 0 30%;
+        color: gray;
+        font-size: 0.7vw;
+    }
 }
