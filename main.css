@@ -116,12 +116,15 @@ nav {
 
 .slider {
     margin-top: 20px;
+    display: flex;
 }
 
 .slide {
-    width: 800px;
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(44, 44, 44, 0.7)), url(http://unsplash.it/800/400?random&gravity=west);
-    height: 800px;
+    width: 900px;
+    display: flex;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(44, 44, 44, 0.7)), url(http://unsplash.it/1500/500?random&gravity=west);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .textSlider {
@@ -129,7 +132,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    width: 60%;
+    width: 50%;
     height: 400px;
 }
 
@@ -186,7 +189,7 @@ nav {
 }
 
 .card {
-    flex: 0 1 auto;
+    flex: 0 1 calc(33% - 10px);
     width: 15vw;
     box-shadow: 0.2px 0.2px 5px grey;
     overflow: hidden;
@@ -224,4 +227,90 @@ nav {
     margin-top: 200px;
     background: linear-gradient(45deg, rgb(238, 13, 152), rgb(252, 41, 94));
     margin: 0 auto;
+}
+
+.authors {
+    padding: 20px;
+    width: 100%;
+    height: 600px;
+    background-color: rgb(226, 226, 226);
+}
+
+.h1Con {
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.authorCon {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 60vw;
+}
+
+.authorCard {
+    flex: 0 1 calc(30% - 50px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 380px;
+    height: 400px;
+    background-color: white;
+}
+
+.authorCard:nth-child(2) {
+    background: linear-gradient(45deg, rgb(146, 29, 255), rgb(231, 46, 255));
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.authorCard:nth-child(2) h2 {
+    color: white;
+    margin: 0 auto;
+}
+
+.authorCard:nth-child(2) h1 {
+    text-align: center;
+}
+
+.author {
+    color: rgb(207, 25, 207);
+    font-size: 1rem;
+}
+
+.author:after {
+    content: " ";
+    display: block;
+    margin-top: 7px;
+    border-bottom: 1px solid rgb(207, 25, 207);
+    transform: scaleX(0.7);
+}
+
+.authorQuote:after {
+    content: " ";
+    display: block;
+    margin-top: 7px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    transform: scaleX(0.7);
+}
+
+.img-cropper {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.img-cropper img {
+    width: 240px;
+    height: auto;
 }
