@@ -99,12 +99,12 @@ nav {
     box-shadow: 3px 2px rgba(0, 0, 0, 0.3);
 }
 
-.intro ul li:nth-child(1) {
+.intro ul a:nth-child(1) li {
     background-color: rgb(235, 235, 235);
     color: black;
 }
 
-.intro ul li:nth-child(2) {
+.intro ul a:nth-child(2) li {
     background-color: rgb(245, 80, 80);
 }
 
