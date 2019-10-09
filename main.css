@@ -64,6 +64,7 @@ nav {
 
 .links {
     display: inline-block;
+    font-size: 1.5rem;
     margin: 10px;
     color: white;
 }
@@ -390,7 +391,106 @@ footer {
     font-size: 1vw;
 }
 
-@media screen and (min-width: 1600px) {
+@media (min-width: 320px) and (max-width: 600px) {
+    header {
+        height: 60vh;
+    }
+    .topBar {
+        display: none;
+    }
+    .topLinks {
+        border-bottom: 1px solid white;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        background: linear-gradient(45deg, rgba(207, 25, 207, 0.8), rgb(238, 199, 25, 0.8));
+        z-index: 1000;
+    }
+    .menu--hidden {
+        display: none;
+    }
+    .menu {
+        padding-right: 10px;
+        color: white;
+        margin-left: auto;
+        display: block;
+        font-size: 1.5rem;
+    }
+    .links {
+        width: 100%;
+        font-size: 0.75rem;
+        color: white;
+    }
+    .links:active {
+        color: black;
+    }
+    .intro {
+        flex: 1 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .intro h1 {
+        margin: 0 auto;
+        font-size: 2.5rem;
+    }
+    .intro h4 {
+        font-size: 0.9rem;
+        margin: 0.5rem auto 2rem auto;
+        color: white;
+    }
+    .intro ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+        vertical-align: middle;
+    }
+    .button {
+        text-align: center;
+        line-height: 2rem;
+        width: 40vw;
+        height: 2rem;
+        border-radius: 5px;
+        box-shadow: 3px 2px rgba(0, 0, 0, 0.3);
+    }
+    .content {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .trending {
+        margin-right: 0;
+        margin-top: 0;
+        overflow: hidden;
+    }
+    .trending__heading {
+        display: none;
+    }
+    .textSlider {
+        height: 400px;
+    }
+    .cards {
+        flex-direction: column;
+        padding: 5px;
+    }
+    .card {
+        width: 100%;
+        margin-top: 0.8rem;
+    }
+    .authors {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) {}
+
+@media (min-width: 1600px) {
     .authorCard:nth-child(2) h1 {
         text-align: center;
         font-size: 1.8vw;

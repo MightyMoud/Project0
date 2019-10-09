@@ -182,3 +182,13 @@
     opacity: .75;
     color: white;
 }
+
+@media (min-width: 320px) {
+    .slick-next,
+    .slick-prev {
+        top: 50%;
+    }
+    .slick-dots {
+        bottom: 90%;
+    }
+}
