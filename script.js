@@ -19,15 +19,18 @@ function menuClick() {
 
 $(window).scroll(function() {
     var distanceFromTop = $(this).scrollTop();
-    if (distanceFromTop <= $('.topLinks').height()) {
-        $('.topLinks').css({
-            overflow: "hidden",
-            position: "relative",
-        });
-    } else {
-        $('.topLinks').css({
-            overflow: "initial",
-            position: "fixed",
-        });
+    if (window.innerWidth <= 800) {
+        if (distanceFromTop <= $('.topLinks').height()) {
+            $('.topLinks').css({
+                overflow: "hidden",
+                position: "relative",
+            });
+        } else {
+            $('.topLinks').css({
+                overflow: "initial",
+                position: "fixed",
+            });
+        }
     }
+
 });

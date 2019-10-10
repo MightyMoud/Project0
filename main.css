@@ -57,9 +57,17 @@ header {
     justify-content: flex-start;
 }
 
+.menu {
+    display: none;
+}
+
+.menu--hidden {
+    display: inherit;
+}
+
 nav {
     margin: 0 auto;
-    width: 400px;
+    //width: 400px;
 }
 
 .links {
@@ -259,7 +267,7 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 380px;
+    width: 200px;
     height: 400px;
     background-color: white;
 }
@@ -316,6 +324,7 @@ nav {
     height: 200px;
     overflow: hidden;
     border-radius: 50%;
+    margin: 20px;
 }
 
 .img-cropper img {
@@ -391,7 +400,7 @@ footer {
     font-size: 1vw;
 }
 
-@media (min-width: 320px) and (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 800px) {
     header {
         height: 60vh;
     }
@@ -426,6 +435,7 @@ footer {
         color: black;
     }
     .intro {
+        text-justify: center;
         flex: 1 0 auto;
         display: flex;
         flex-direction: column;
@@ -433,10 +443,10 @@ footer {
     }
     .intro h1 {
         margin: 0 auto;
-        font-size: 2.5rem;
+        font-size: 10vw;
     }
     .intro h4 {
-        font-size: 0.9rem;
+        font-size: 3vw;
         margin: 0.5rem auto 2rem auto;
         color: white;
     }
@@ -448,9 +458,11 @@ footer {
         vertical-align: middle;
     }
     .button {
+        font-size: 2.5vw;
         text-align: center;
         line-height: 2rem;
-        width: 40vw;
+        width: 30vw;
+        max-width: 150px;
         height: 2rem;
         border-radius: 5px;
         box-shadow: 3px 2px rgba(0, 0, 0, 0.3);
@@ -480,17 +492,51 @@ footer {
         width: 100%;
         margin-top: 0.8rem;
     }
-    .authors {
+    .sidePanel {
         display: none;
     }
-    footer {
+    .h1Con {
+        text-align: center;
+    }
+    .authors {
+        height: 100%;
+        padding-bottom: 30px;
+    }
+    .authorCon {
+        flex-direction: column;
+        width: 80vw;
+    }
+    .authorCard {
+        width: initial;
+    }
+    .authorCard:nth-child(2) h1 {
+        font-size: 1.5rem;
+    }
+    .footerWraper {
+        width: 100%;
+    }
+    .footerBrand {
+        justify-content: center;
+    }
+    .footerBrand h3 {
         display: none;
+    }
+    .footerBrand img {
+        height: initial;
+    }
+    .footerNav {
+        border: none;
+    }
+    .footerNav ul {
+        display: none;
+    }
+    .copyrights {
+        font-size: 1rem;
+        flex: none;
     }
 }
 
-@media (min-width: 600px) {}
-
-@media (min-width: 1600px) {
+@media (min-width: 1400px) {
     .authorCard:nth-child(2) h1 {
         text-align: center;
         font-size: 1.8vw;
