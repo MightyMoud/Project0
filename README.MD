@@ -7,4 +7,4 @@ I haven't used any CSS fraweworks or any HTML helpers. Just basic VSCODE stuff. 
 
 Below you can the .jpeg design that I started with. 
 
-![The original design from the designer] (https://github.com/ms-mousa/Project0/blob/master/img/home.jpg)
+![The original design from the designer](https://github.com/ms-mousa/Project0/blob/master/img/home.jpg)
